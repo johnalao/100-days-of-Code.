@@ -23,16 +23,14 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
-#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-#Write your code below this line 👇
-direction = input("where do you want to go? Please type left or right.")
+direction = input("where do you want to go? Please type left or right.\n")
 direction_case = direction.lower()
 if direction_case == "left":
-	boat = input("You are in front of a river do you want to swim or wait for the boat?Please type swim or wait.")
+	boat = input("You are in front of a river do you want to swim or wait for the boat? Please type swim or wait.\n")
 	boat_case = boat.lower()
 	if boat_case == "wait":
-		door = input("You are in front of two doors, red, blue, or yellow which are you taking? Please type Red or Blue or Yellow.")
+		door = input("You are in front of three doors, red, blue, and yellow which are you taking? Please type Red or Blue or Yellow.\n")
 		door_case = door.lower()
 		if door_case == "yellow":
 			print("You have found the treasure")
